@@ -1,0 +1,148 @@
+@startuml inline_umlgraph_1.png
+   interface I_Key
+   {
+       +get_state()
+       +set_state(bool state)
+       +get_count()
+       +increment_count()
+       +reset_count()
+       +get_pin()
+   }
+
+   note top of Key 
+   singleton
+   end note
+
+   class Key <gpio_num_t Key_pin>
+   {
+       -pressed
+       -count_ms
+       -key_pin
+       -Key()
+       -Key(const Key&)
+       -Key& operator=(const Key&)
+       -~Key()
+       -----
+       +{static} Key& get_instance()
+       .....
+       +get_state()
+       +set_state(bool state)
+       +get_count()        
+       +increment_count()
+       +reset_count()
+       +get_pin()
+   }
+
+   I_Key <|-up- Key : implements
+@enduml
+@startuml inline_umlgraph_2.eps
+   interface I_Key
+   {
+       +get_state()
+       +set_state(bool state)
+       +get_count()
+       +increment_count()
+       +reset_count()
+       +get_pin()
+   }
+
+   note top of Key 
+   singleton
+   end note
+
+   class Key <gpio_num_t Key_pin>
+   {
+       -pressed
+       -count_ms
+       -key_pin
+       -Key()
+       -Key(const Key&)
+       -Key& operator=(const Key&)
+       -~Key()
+       -----
+       +{static} Key& get_instance()
+       .....
+       +get_state()
+       +set_state(bool state)
+       +get_count()        
+       +increment_count()
+       +reset_count()
+       +get_pin()
+   }
+
+   I_Key <|-up- Key : implements
+@enduml
+@startuml inline_umlgraph_3.png
+    interface I_Key
+    {
+        +get_state()
+        +set_state(bool state)
+        +get_count()
+        +increment_count()
+        +reset_count()
+        +get_pin()
+    }
+
+    note top of Key 
+    singleton
+    end note
+
+    class Key <gpio_num_t Key_pin>
+    {
+        -pressed
+        -count_ms
+        -key_pin
+        -Key()
+        -Key(const Key&)
+        -Key& operator=(const Key&)
+        -~Key()
+        -----
+        +{static} Key& get_instance()
+        .....
+        +get_state()
+        +set_state(bool state)
+        +get_count()        
+        +increment_count()
+        +reset_count()
+        +get_pin()
+    }
+
+    I_Key <|-up- Key : implements
+@enduml
+@startuml inline_umlgraph_4.eps
+    interface I_Key
+    {
+        +get_state()
+        +set_state(bool state)
+        +get_count()
+        +increment_count()
+        +reset_count()
+        +get_pin()
+    }
+
+    note top of Key 
+    singleton
+    end note
+
+    class Key <gpio_num_t Key_pin>
+    {
+        -pressed
+        -count_ms
+        -key_pin
+        -Key()
+        -Key(const Key&)
+        -Key& operator=(const Key&)
+        -~Key()
+        -----
+        +{static} Key& get_instance()
+        .....
+        +get_state()
+        +set_state(bool state)
+        +get_count()        
+        +increment_count()
+        +reset_count()
+        +get_pin()
+    }
+
+    I_Key <|-up- Key : implements
+@enduml
